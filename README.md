@@ -30,8 +30,20 @@ In your `mkdocs.yml` add this to `markdown_extensions`.
 markdown_extensions:
   - pymdownx.superfences:
     custom_fences:
+      - name: actdiag
+        class: actdiag
+        format: !!python/name:blockdiag_fences.blockdiag.fence_img_format
       - name: blockdiag
         class: blockdiag
+        format: !!python/name:blockdiag_fences.blockdiag.fence_img_format
+      - name: nwdiag
+        class: nwdiag
+        format: !!python/name:blockdiag_fences.blockdiag.fence_img_format
+      - name: packetdiag
+        class: packetdiag
+        format: !!python/name:blockdiag_fences.blockdiag.fence_img_format
+      - name: rackdiag
+        class: rackdiag
         format: !!python/name:blockdiag_fences.blockdiag.fence_img_format
       - name: seqdiag
         class: seqdiag
