@@ -1,5 +1,7 @@
 from setuptools import setup, find_packages
 
+with open('README.md') as f:
+    long_description = f.read()
 
 setup(
     name='blockdiag-fences',
@@ -16,5 +18,7 @@ setup(
     ],
     author='Oliver Salzburg',
     author_email='oliver.salzburg@gmail.com',
-    description='blockdiag extension for Python Markdown'
+    description='blockdiag extension for Python Markdown',
+    long_description=long_description,
+    long_description_content_type='text/markdown'
 )
