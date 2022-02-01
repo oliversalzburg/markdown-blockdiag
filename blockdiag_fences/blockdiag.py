@@ -69,7 +69,6 @@ def fence_img_format(source, language, class_name, options, md, **kwargs):
         source,
         language,
         output_fmt=output_fmt,
-        font_path="/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
     )
 
     if output_fmt == "png":
