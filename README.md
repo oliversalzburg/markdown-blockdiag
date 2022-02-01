@@ -12,7 +12,7 @@ pip install blockdiag-fences
 
 ## Use
 
-Wrap your diagram in a code black, tagged with the name of the tool to convert it:
+Wrap your diagram in a code block, tagged with the name of the tool to convert it:
 
 
 	```blockdiag
@@ -24,7 +24,7 @@ Wrap your diagram in a code black, tagged with the name of the tool to convert i
 
 ## MkDocs Integration
 
-In your mkdocs.yml add this to markdown_extensions.
+In your `mkdocs.yml` add this to `markdown_extensions`.
 
 ```yaml
 markdown_extensions:
