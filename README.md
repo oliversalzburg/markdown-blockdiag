@@ -2,6 +2,8 @@
 
 This provides [blockdiag](http://blockdiag.com/en/blockdiag/index.html) rendering for [Python Markdown](http://pythonhosted.org/Markdown/) through the [SuperFences extension](https://facelessuser.github.io/pymdown-extensions/extensions/superfences/).
 
+It is based on <https://github.com/gisce/markdown-blockdiag>.
+
 ## Install
 
 ```shell
@@ -27,12 +29,12 @@ In your mkdocs.yml add this to markdown_extensions.
 
 ```yaml
 markdown_extensions:
-	- pymdownx.superfences:
-		custom_fences:
-			- name: blockdiag
-			  class: blockdiag
-			  format: !!python/name:blockdiag_fences.blockdiag.fence_img_format
-			- name: seqdiag
-			  class: seqdiag
-			  format: !!python/name:blockdiag_fences.blockdiag.fence_img_format
+  - pymdownx.superfences:
+    custom_fences:
+      - name: blockdiag
+        class: blockdiag
+        format: !!python/name:blockdiag_fences.blockdiag.fence_img_format
+      - name: seqdiag
+        class: seqdiag
+        format: !!python/name:blockdiag_fences.blockdiag.fence_img_format
 ```
