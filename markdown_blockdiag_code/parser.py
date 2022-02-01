@@ -31,7 +31,6 @@ class BlockdiagProcessor(Preprocessor):
         text = "\n".join(lines)
         while 1:
             match = FENCED_BLOCK_RE.search(text)
-            print(match)
             if match:
                 lang = match.group('lang')
 
