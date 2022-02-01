@@ -39,7 +39,7 @@ class BlockdiagProcessor(Preprocessor):
                 font_antialias = self.extension.getConfig('fontantialias')
                 output_fmt = self.extension.getConfig('format')
                 diagram = draw_blockdiag(match.group(
-                    'code'), output_fmt=output_fmt, font_path=font_path, font_antialias=font_antialias)
+                    'code'), lang, output_fmt=output_fmt, font_path=font_path, font_antialias=font_antialias)
                 if output_fmt == 'png':
                     src_data = 'data:image/png;base64,{0}'.format(
                         base64.b64encode(diagram).decode('ascii')

@@ -20,8 +20,8 @@ DIAG_MODULES = {
 }
 
 
-def draw_blockdiag(content, filename=None, font_path=None, font_antialias=True, output_fmt='png'):
-    diag_type, content = content.split(" ", 1)
+def draw_blockdiag(content, diag_type, filename=None, font_path=None, font_antialias=True, output_fmt='png'):
+    header, content = content.split(" ", 1)
     parser, builder, drawer = DIAG_MODULES[diag_type.strip()]
     tree = parser.parse_string(content)
     diagram = builder.ScreenNodeBuilder.build(tree)
