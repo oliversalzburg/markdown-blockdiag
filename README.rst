@@ -47,5 +47,11 @@ In your mkdocs.yml add this to markdown_extensions.
 .. code-block::
 
   markdown_extensions:
-    - markdown_blockdiag_code:
-        format: svg
+    - pymdownx.superfences:
+        custom_fences:
+          - name: blockdiag
+            class: blockdiag
+            format: !!python/name:markdown_blockdiag_code.blockdiag.fence_img_format
+          - name: seqdiag
+            class: seqdiag
+            format: !!python/name:markdown_blockdiag_code.blockdiag.fence_img_format

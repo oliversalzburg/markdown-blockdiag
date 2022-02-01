@@ -1,5 +1,6 @@
 from __future__ import absolute_import, unicode_literals
-
+import base64
+from urllib.parse import quote as url_quote
 from nwdiag import parser as nw_parser, builder as nw_builder, drawer as nw_drawer
 from seqdiag import parser as seq_parser, builder as seq_builder, drawer as seq_drawer
 from actdiag import parser as act_parser, builder as act_builder, drawer as act_drawer
@@ -37,3 +38,20 @@ def draw_blockdiag(content, diag_type, filename=None, font_path=None, font_antia
     draw.draw()
 
     return draw.save()
+
+
+IMG_WRAP = '<img src="%s">'
+
+
+def fence_img_format(source, language, class_name, options, md, **kwargs):
+    output_fmt = "svg"
+    diagram = draw_blockdiag(source, language, output_fmt=output_fmt)
+
+    if output_fmt == 'png':
+        src_data = 'data:image/png;base64,{0}'.format(
+            base64.b64encode(diagram).decode('ascii'))
+    else:
+        src_data = 'data:image/svg+xml;charset=utf-8,{0}'.format(
+            url_quote(diagram))
+    code = IMG_WRAP % src_data
+    return code

@@ -7,7 +7,7 @@ from xml.sax.saxutils import unescape
 
 from markdown import markdown
 from markdown_blockdiag_code.parser import BlockdiagProcessor
-from markdown_blockdiag_code.utils import draw_blockdiag
+from markdown_blockdiag_code.blockdiag import draw_blockdiag
 
 # Python 3 version
 try:
