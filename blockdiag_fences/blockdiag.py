@@ -42,7 +42,7 @@ def draw_blockdiag(content, diag_type, filename=None, font_path=None, font_antia
 
 def fence_img_format(source, language, class_name, options, md, **kwargs):
     output_fmt = "svg"
-    diagram = draw_blockdiag(source, language, output_fmt=output_fmt)
+    diagram = draw_blockdiag(source, language, output_fmt=output_fmt, font_path="/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")
 
     if output_fmt == 'png':
         src_data = f'data:image/png;base64,{base64.b64encode(diagram).decode("ascii")}'

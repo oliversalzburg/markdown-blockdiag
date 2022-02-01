@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='markdown-blockdiag-code',
+    name='blockdiag-fences',
     version='0.0.1',
     packages=find_packages(),
     url='https://github.com/oliversalzburg/markdown-blockdiag',
@@ -16,6 +16,5 @@ setup(
     ],
     author='Oliver Salzburg',
     author_email='oliver.salzburg@gmail.com',
-    test_suite="tests",
     description='blockdiag extension for Python Markdown'
 )
