@@ -1,5 +1,5 @@
-Markdown blockdiag
-==================
+Markdown blockdiag code
+=======================
 
 .. image:: https://travis-ci.org/gisce/markdown-blockdiag.svg?branch=master
     :target: https://travis-ci.org/gisce/markdown-blockdiag
@@ -13,7 +13,7 @@ Install
 
 .. code-block::
 
-  $ pip install markdown-blockdiag
+  $ pip install markdown-blockdiag-code
 
 Use
 ---
@@ -21,11 +21,12 @@ Use
 In your markdown text you can define the block
 
 .. code-block::
-
+  ```blockdiag
   blockdiag {
       A -> B -> C -> D;
       A -> E -> F -> G;
   }
+  ```
 
 
 Testing
@@ -46,5 +47,5 @@ In your mkdocs.yml add this to markdown_extensions.
 .. code-block::
 
   markdown_extensions:
-    - markdown_blockdiag:
+    - markdown_blockdiag_code:
         format: svg
