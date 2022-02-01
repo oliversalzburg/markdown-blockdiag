@@ -14,14 +14,13 @@ pip install blockdiag-fences
 
 Wrap your diagram in a code black, tagged with the name of the tool to convert it:
 
-```
-\`\`\`blockdiag
-blockdiag {
-	A -> B -> C -> D;
-	A -> E -> F -> G;
-}
-\`\`\`
-```
+
+	```blockdiag
+	blockdiag {
+		A -> B -> C -> D;
+		A -> E -> F -> G;
+	}
+	```
 
 ## MkDocs Integration
 
