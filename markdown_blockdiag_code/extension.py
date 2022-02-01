@@ -1,5 +1,5 @@
 from markdown.extensions import Extension
-from markdown_blockdiag.parser import BlockdiagProcessor
+from markdown_blockdiag_code.parser import BlockdiagProcessor
 
 
 class BlockdiagExtension(Extension):
@@ -14,6 +14,6 @@ class BlockdiagExtension(Extension):
 
     def extendMarkdown(self, md, md_globals):
         md.parser.blockprocessors.add(
-            'blockdiag', BlockdiagProcessor(md.parser, self), '>indent'
+            '```', BlockdiagProcessor(md.parser, self), '>indent'
         )
         md.registerExtension(self)

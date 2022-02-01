@@ -4,7 +4,7 @@ import base64
 
 from markdown.blockprocessors import BlockProcessor
 from markdown.util import etree
-from markdown_blockdiag.utils import draw_blockdiag, DIAG_MODULES
+from markdown_blockdiag_code.utils import draw_blockdiag, DIAG_MODULES
 
 # Python 3 version
 try:
@@ -17,7 +17,7 @@ except ImportError:
 class BlockdiagProcessor(BlockProcessor):
 
     RE = re.compile(r"""
-        ^
+        ^```
         (?P<diagtype>{})
         \s+
         \{{

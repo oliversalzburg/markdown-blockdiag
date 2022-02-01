@@ -2,10 +2,10 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='markdown-blockdiag',
-    version='0.8.0',
+    name='markdown-blockdiag-code',
+    version='0.0.1',
     packages=find_packages(),
-    url='https://github.com/gisce/markdown-blockdiag',
+    url='https://github.com/oliversalzburg/markdown-blockdiag',
     license='MIT',
     install_requires=[
         'Markdown',
@@ -14,8 +14,8 @@ setup(
         'actdiag',
         'nwdiag',
     ],
-    author='GISCE-TI, S.L.',
-    author_email='devel@gisce.net',
+    author='Oliver Salzburg',
+    author_email='oliver.salzburg@gmail.com',
     test_suite="tests",
     description='blockdiag extension for Python Markdown'
 )

@@ -1,4 +1,4 @@
-from markdown_blockdiag.extension import BlockdiagExtension
+from markdown_blockdiag_code.extension import BlockdiagExtension
 
 
 def makeExtension(**kwargs):
