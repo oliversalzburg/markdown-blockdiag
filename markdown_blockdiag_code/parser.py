@@ -16,7 +16,7 @@ except ImportError:
     from urllib import quote as url_quote
 
 FENCED_BLOCK_RE = re.compile(
-    r'(?P<fence>^(?:~{3,}|`{3,}))[ ]*(\{?\.?(?P<lang>[a-zA-Z0-9_+-]*)\}?)?[ ]*\n(?P<code>.*?)(?<=\n)(?P=fence)[ ]*$',
+    r'(?P<fence>^(?:~{3,}|`{3,}))[ ]*(\{?\.?(?P<lang>blockdiag|seqdiag)\}?)?[ ]*\n(?P<code>.*?)(?<=\n)(?P=fence)[ ]*$',
     re.MULTILINE | re.DOTALL
 )
 IMG_WRAP = '<img src="%s">'
