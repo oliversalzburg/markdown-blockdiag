@@ -1,3 +1,4 @@
+from markdown import Markdown
 from markdown.extensions import Extension
 from markdown_blockdiag_code.parser import BlockdiagProcessor
 
@@ -12,8 +13,7 @@ class BlockdiagExtension(Extension):
         }
         super(BlockdiagExtension, self).__init__(**kwargs)
 
-    def extendMarkdown(self, md, md_globals):
-        md.parser.blockprocessors.add(
-            '```', BlockdiagProcessor(md.parser, self), '>indent'
-        )
+    def extendMarkdown(self, md: Markdown):
+        md.preprocessors.add("blockdiag",
+                             BlockdiagProcessor(md, self), '>normalize_whitespace')
         md.registerExtension(self)
