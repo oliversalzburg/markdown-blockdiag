@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "blockdiag-fences"
-version = "0.0.2"
+version = "0.0.3"
 description = "Inline blockdiag images for Markdown with SuperFences"
 authors = ["Oliver Salzburg <oliver.salzburg@gmail.com>"]
 license = "MIT"
