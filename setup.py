@@ -11,13 +11,9 @@ setup(
     license="MIT",
     install_requires=[
         "Markdown",
-        "mkdocs",
-        "superfences",
         "actdiag",
         "blockdiag",
         "nwdiag",
-        "packetdiag",
-        "rackdiag",
         "seqdiag",
     ],
     author="Oliver Salzburg",
