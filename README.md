@@ -1,5 +1,7 @@
 # blockdiag for SuperFences
 
+[![PyPI version](https://badge.fury.io/py/blockdiag-fences.svg)](https://badge.fury.io/py/blockdiag-fences)
+
 This provides [blockdiag](http://blockdiag.com/en/blockdiag/index.html) rendering for [Python Markdown](http://pythonhosted.org/Markdown/) through the [SuperFences extension](https://facelessuser.github.io/pymdown-extensions/extensions/superfences/).
 
 It is based on <https://github.com/gisce/markdown-blockdiag>.
