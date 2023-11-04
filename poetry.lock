@@ -11,7 +11,7 @@ blockdiag = ">=3.0.0"
 
 [package.extras]
 rst = ["docutils"]
-testing = ["nose", "pep8 (>=1.3)", "reportlab", "docutils", "flake8", "flake8-coding", "flake8-copyright", "flake8-isort"]
+testing = ["docutils", "flake8", "flake8-coding", "flake8-copyright", "flake8-isort", "nose", "pep8 (>=1.3)", "reportlab"]
 
 [[package]]
 name = "blockdiag"
@@ -24,12 +24,13 @@ python-versions = ">=3.7"
 [package.dependencies]
 funcparserlib = ">=1.0.0a0"
 Pillow = ">3.0"
+setuptools = "*"
 webcolors = "*"
 
 [package.extras]
 pdf = ["reportlab"]
 rst = ["docutils"]
-testing = ["nose", "flake8", "flake8-coding", "flake8-copyright", "flake8-isort", "reportlab", "docutils"]
+testing = ["docutils", "flake8", "flake8-coding", "flake8-copyright", "flake8-isort", "nose", "reportlab"]
 
 [[package]]
 name = "funcparserlib"
@@ -53,7 +54,7 @@ blockdiag = ">=3.0.0"
 [package.extras]
 pdf = ["reportlab"]
 rst = ["docutils"]
-testing = ["nose", "pep8 (>=1.3)", "flake8", "flake8-coding", "flake8-copyright", "flake8-isort", "reportlab", "docutils"]
+testing = ["docutils", "flake8", "flake8-coding", "flake8-copyright", "flake8-isort", "nose", "pep8 (>=1.3)", "reportlab"]
 
 [[package]]
 name = "pillow"
@@ -75,7 +76,20 @@ python-versions = ">=3.7"
 blockdiag = ">=3.0.0"
 
 [package.extras]
-testing = ["reportlab", "nose", "flake8", "flake8-coding", "flake8-copyright", "flake8-isort", "docutils"]
+testing = ["docutils", "flake8", "flake8-coding", "flake8-copyright", "flake8-isort", "nose", "reportlab"]
+
+[[package]]
+name = "setuptools"
+version = "68.2.2"
+description = "Easily download, build, install, upgrade, and uninstall Python packages"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.extras]
+docs = ["furo", "jaraco.packaging (>=9.3)", "jaraco.tidelift (>=1.4)", "pygments-github-lexers (==0.0.5)", "rst.linker (>=1.9)", "sphinx (>=3.5)", "sphinx-favicon", "sphinx-hoverxref (<2)", "sphinx-inline-tabs", "sphinx-lint", "sphinx-notfound-page (>=1,<2)", "sphinx-reredirects", "sphinxcontrib-towncrier"]
+testing = ["build[virtualenv]", "filelock (>=3.4.0)", "flake8-2020", "ini2toml[lite] (>=0.9)", "jaraco.develop (>=7.21)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "pip (>=19.1)", "pytest (>=6)", "pytest-black (>=0.3.7)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=2.2)", "pytest-mypy (>=0.9.1)", "pytest-perf", "pytest-ruff", "pytest-timeout", "pytest-xdist", "tomli-w (>=1.0.0)", "virtualenv (>=13.0.0)", "wheel"]
+testing-integration = ["build[virtualenv] (>=1.0.3)", "filelock (>=3.4.0)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "packaging (>=23.1)", "pytest", "pytest-enabler", "pytest-xdist", "tomli", "virtualenv (>=13.0.0)", "wheel"]
 
 [[package]]
 name = "webcolors"
@@ -87,8 +101,8 @@ python-versions = ">=3.5,"
 
 [metadata]
 lock-version = "1.1"
-python-versions = "^3.8"
-content-hash = "065023b094f11107f8c94e089b9f78522d793ba4fe32afdc3340408e2b733e66"
+python-versions = "3.12.0"
+content-hash = "b19e21700d3db2e1d97807b4e2905ee9b1df4d886f59b67f62b60a5243e6c6c8"
 
 [metadata.files]
 actdiag = [
@@ -144,6 +158,10 @@ pillow = [
 seqdiag = [
     {file = "seqdiag-3.0.0-py3-none-any.whl", hash = "sha256:8fc941a0badc992766ffb393cf46d56f087e6c58438bc20699e7cdbae202033d"},
     {file = "seqdiag-3.0.0.tar.gz", hash = "sha256:e15113a28bd075460a62da44e15a88fafa3c81fdf3a35dcd5e3cd64ef15e961a"},
+]
+setuptools = [
+    {file = "setuptools-68.2.2-py3-none-any.whl", hash = "sha256:b454a35605876da60632df1a60f736524eb73cc47bbc9f3f1ef1b644de74fd2a"},
+    {file = "setuptools-68.2.2.tar.gz", hash = "sha256:4ac1475276d2f1c48684874089fefcd83bd7162ddaafb81fac866ba0db282a87"},
 ]
 webcolors = [
     {file = "webcolors-1.11.1-py3-none-any.whl", hash = "sha256:b8cd5d865a25c51ff1218f0c90d0c0781fc64312a49b746b320cf50de1648f6e"},
