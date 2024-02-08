@@ -101,8 +101,8 @@ python-versions = ">=3.5,"
 
 [metadata]
 lock-version = "1.1"
-python-versions = "3.12.0"
-content-hash = "b19e21700d3db2e1d97807b4e2905ee9b1df4d886f59b67f62b60a5243e6c6c8"
+python-versions = "3.12.2"
+content-hash = "c321b5e05030f35994899428fb7125c00fdf3e2b3d3dfd449cb448048e7cb851"
 
 [metadata.files]
 actdiag = [
