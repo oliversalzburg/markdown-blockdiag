@@ -21,7 +21,7 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
-python = "3.12.0"
+python = "3.13.2"
 blockdiag = "3.0.0"
 seqdiag = "3.0.0"
 nwdiag = "3.0.0"
